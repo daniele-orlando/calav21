@@ -1,0 +1,8 @@
+.DS_Store
+.netlify
+.vscode
+*.code-workspace
+/private/
+node_modules
+package-lock.json
+tsconfig.tsbuildinfo

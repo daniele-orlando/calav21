@@ -1,0 +1,55 @@
+@import '@evilcss/std/reset.css';
+@import '@evilcss/std/reset/even/focus-outline.css';
+@import '@evilcss/std/all.classes.css';
+@import '@evilcss/std/all.props.css';
+@import '@evilcss/std/font-default.css';
+@import '@evilcss/std/button/dye.css';
+@import '@evilcss/std/button/flat.css';
+@import '@evilcss/std/button/halo.css';
+@import '@evilcss/std/button/plain.css';
+@import '@evilcss/std/switch.classes.css';
+@import '@evilcss/std/theme/dark.css';
+@import '@evilcss/std/theme/light.css';
+
+/*
+#App {
+}
+*/
+
+.std {
+    --std-color-primary-h: 0deg;
+    --std-color-primary-s: 100%;
+    --std-color-primary-l: 50%;
+    --std-color-secondary-h: 30deg;
+    --std-color-secondary-s: 55%;
+    --std-color-secondary-l: 50%;
+
+    --view-gutter: var(--std-gutter-l);
+}
+.std.std-theme-dark {
+    --std-color-fg1: bisque;
+}
+
+@media (max-width: 599px) {
+    .std {
+        --std-text-size-min: .8rem;
+        --std-text-small-size: calc(.9 * var(--std-text-size-min));
+        --std-text-body2-size: calc(1 * var(--std-text-size-min));
+        --std-text-body1-size: calc(1.2 * var(--std-text-body2-size));
+        --std-text-caption-size: calc(1 * var(--std-text-body1-size));
+        --std-text-button-size: calc(1 * var(--std-text-body1-size));
+        --std-text-overline-size: calc(1 * var(--std-text-body1-size));
+        --std-text-subtitle2-size: calc(1 * var(--std-text-body1-size));
+        --std-text-subtitle1-size: calc(1.2 * var(--std-text-subtitle2-size));
+        --std-text-h6-size: calc(1.15 * var(--std-text-subtitle1-size));
+        --std-text-h5-size: calc(1.15 * var(--std-text-h6-size));
+        --std-text-h4-size: calc(1.15 * var(--std-text-h5-size));
+        --std-text-h3-size: calc(1.15 * var(--std-text-h4-size));
+        --std-text-h2-size: calc(1.15 * var(--std-text-h3-size));
+        --std-text-h1-size: calc(1.15 * var(--std-text-h2-size));
+        --std-text-display2-size: calc(1.15 * 1.15 * var(--std-text-h1-size));
+        --std-text-display1-size: calc(1.15 * var(--std-text-display2-size));
+
+        --view-gutter: var(--std-gutter-m);
+    }
+}
